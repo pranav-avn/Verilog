@@ -33,24 +33,3 @@ module four_bit_adder(S,C4,A,V,C0);
         FA2(S[2], C3, A[2], B[2], C2),
         FA3(S[3], C4, A[3], B[3], C3);
 endmodule
-
-module testbench();
-    //Inputs
-    reg[3:0]a;
-    reg[3:0]b;
-    reg cin;
-    //Outputs
-    wire[3:0]sum;
-    wire cout;
-
-    four_bit_adder DUT(
-        .A(a),
-        .B(b),
-        .C0(cin),
-        .S(sum),
-        .C4(cout)
-    );
-    reg clk;
-    reg rst;
-
-    
