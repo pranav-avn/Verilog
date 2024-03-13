@@ -20,7 +20,7 @@ module fulladder(S,C,x,y,z);
 endmodule
 
 //Test
-module four_bit_adder(S,C4,A,V,C0);
+module four_bit_adder(S,C4,A,B,C0);
     input[3:0]A,B;
     input C0;
     output[3:0]S;
